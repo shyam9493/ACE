@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 
-const mongoUrl = `mongodb+srv://ACE${process.env.DB_USER}:${process.env.DB_PASSWORD}${process.env.DB_HOST}/?retryWrites=true&w=majority&appName=Cluster0`;
+const mongoUrl = `mongodb+srv://ACE:ebmselection@cluster0.evhrhs7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 console.log(mongoUrl);
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
