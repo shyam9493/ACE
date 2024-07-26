@@ -15,6 +15,10 @@ app.listen(port, () => {
   });
 app.use(express.static(__dirname + "/public"));
 
+app.set("views", __dirname + "/views");
+app.use("/public", express.static(__dirname + "/public"));
+
+
 app.get("/",async(req,res)=>{
     res.render("login");
 });
