@@ -35,7 +35,7 @@ app.post("/register",async (req,res)=>{
             role
         });
         await newUser.save();
-        res.send("User created");
+        res.redirect("/");
       }catch(err){
         res.redirect("/register");
       }
