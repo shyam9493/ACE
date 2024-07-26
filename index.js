@@ -88,7 +88,7 @@ var transporter = nodemailer.createTransport({
 app.post("/mail",async(req,res)=>{
 var mailOptions = {
   from:  process.env.EMAIL,
-  to: 'fish68054@gmail.com',
+  to: 'bucky17d@gmail.com',
   subject: req.body.sub,
   text: req.body.desc
 };
